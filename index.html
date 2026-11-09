@@ -1,1 +1,197 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Carter the GitHub Larper</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-color: #c9d1d9;
+            --accent-green: #238636;
+            --accent-red: #da3633;
+            --accent-purple: #8957e5;
+            --subtext: #8b949e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .profile-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #21262d;
+            border: 2px solid var(--accent-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .user-info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .user-info .username {
+            color: var(--subtext);
+            font-size: 16px;
+        }
+
+        .user-info .badge {
+            display: inline-block;
+            background-color: rgba(137, 87, 229, 0.15);
+            color: var(--accent-purple);
+            border: 1px solid var(--accent-purple);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+
+        .bio {
+            margin-top: 16px;
+            font-style: italic;
+            color: #a3b3c2;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .about-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .about-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+            color: #f0883e;
+        }
+
+        .about-box p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--subtext);
+            line-height: 1.4;
+        }
+
+        .roast-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .roast-list li {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-red);
+            border-radius: 4px;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+        }
+
+        .roast-list li strong {
+            color: #f0883e;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--subtext);
+            font-size: 12px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="avatar">🤡</div>
+            <div class="user-info">
+                <h1>About Me: Carter</h1>
+                <div class="username">@carter-the-larper</div>
+                <div><span class="badge">Self-Proclaimed Tech Prodigy</span></div>
+            </div>
+        </div>
+        <p class="bio">"Senior Full-Stack Prompt Engineer & Master of Typing 120 WPM Without Writing Any Real Code."</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-box">
+            <h3>📍 Current Location</h3>
+            <p>Stuck in the Neovim editor (Day 142 of trying to exit).</p>
+        </div>
+        <div class="about-box">
+            <h3>⚡ Core Skill</h3>
+            <p>Adding <code>README.md</code> typo fixes to keep the contribution graph green.</p>
+        </div>
+        <div class="about-box">
+            <h3>🎯 Career Goal</h3>
+            <p>To write a single function from scratch without checking Stack Overflow.</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <div class="section-title">🙋‍♂️ About Carter (The Honest Version)</div>
+        <ul class="roast-list">
+            <li><strong>Who I Am:</strong> A developer whose entire personal portfolio consists of cloned repositories with the author's name changed.</li>
+            <li><strong>My Workflow:</strong> Spend 6 hours tweaking color schemes and terminal themes, 5 minutes writing code, and 2 hours force-pushing to hide my broken builds.</li>
+            <li><strong>Favorite Language:</strong> English (specifically when prompting AI to write my JavaScript).</li>
+            <li><strong>Open Source Impact:</strong> Once changed double quotes to single quotes in a major repository, got instantly blocked, and listed myself as a "Core Contributor."</li>
+            <li><strong>Daily Routine:</strong> Automated 50 empty git commits before breakfast so people think I code while sleeping.</li>
+        </ul>
+    </div>
+
+    <footer>
+        Generated for Carter • Keep larping, bro.
+    </footer>
+</div>
+
+</body>
+</html>
